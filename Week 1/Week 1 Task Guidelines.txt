@@ -1,0 +1,29 @@
+2) Download and install Android Studio
+	Download Link: http://developer.android.com/sdk/index.html
+
+3) Download and install Genymotion
+	a. Create account at https://www.genymotion.com/#!/
+	b. Login
+	c. Click on Pricing -> Individual -> Basic -> Get Started
+	d. Download the installer with VirtualBox
+	e. Install Genymotion Plugin in Android Studio
+		Instructions -> https://www.genymotion.com/plugins/
+	f. Open Genymotion
+	g. Login
+	h. Create a Virtual Device
+
+   Configure phone
+	a. Settings -> About Phone
+	b. Tap build number 7 times (Toasts (small popups containing feedbacks) should appear as you tap the build number)
+	c. Go back to Settings
+	d. Developer Options -> Enable USB Debugging
+	e. Plug in Phone in Laptop (via usb) then choose Media device mode
+	f. Allow the Laptop to recognize / install the device
+	*Never cancel installation of the phone in your machine, it might not show up again next time
+
+4) Create a Hello World Android Application and test run it on your virtual devices / phones
+	a. File -> New -> New Project
+	b. Input application name -> choose minimum sdk (suggested/recommended is API 18 or 19) -> blank / empty activity -> change name (optional) -> finish
+	c. Start Virtual Device in Genymotion / plug - in android device
+	d. Run -> Choose device -> test
+	e. Be happy and revel in your triumph. You have created your first Android Application
