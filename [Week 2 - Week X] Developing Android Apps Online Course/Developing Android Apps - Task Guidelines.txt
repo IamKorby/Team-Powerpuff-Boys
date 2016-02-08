@@ -1,0 +1,35 @@
+1) Create Udacity Account
+	Link: https://www.udacity.com/
+
+2) Login and click on the Start Free Course button of the Developing Android Apps Course
+	Link: https://www.udacity.com/course/developing-android-apps--ud853
+
+3) Start doing the online course. This will give you the basic skills and knowledge that you need to be able to develop your own app
+
+4) Push your code in Project Sunshine to GitHub after every residency session
+	Commit Message: Week <x.r> - <new changes>
+		where x -> week number
+		      r -> residency number (1st or 2nd residency for the week)
+
+	e.g. Week 2 Residency 2, added Home page
+		Commit Message: Week 2.2 - Added Home Page
+
+	Directory: Push in '[Week 2 - Week X] Developing Android Apps Online Course' Folder
+
+5) I created a powerpoint crash course file for you guys :D This file contains the basic stuff you might need for the online course
+
+Some Tips:
+- Ctrl-Space is your best friend. 
+	Why?
+	- Code completion
+	- Gives useful / meaningful suggestions
+	- Shows list of methods / variables that you can use
+- You may download the videos and subtitles so in case of internet issues, you can still go through the lessons
+
+Supplementary Lessons:
+1) Android Development Basics Crash Course ppt
+	- Uploaded in your Team's repository
+
+2) Android Development for Beginners
+	Link: https://www.udacity.com/course/android-development-for-beginners--ud837
+	- Click on Access Course Materials (not enroll) to access course materials =)) 
