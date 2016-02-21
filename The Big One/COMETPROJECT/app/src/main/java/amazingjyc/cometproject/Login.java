@@ -21,8 +21,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        loginButton = (Button) findViewById(R.id.button);
-        registerButton = (Button) findViewById(R.id.button4);
+        loginButton = (Button) findViewById(R.id.loginbutton);
+        registerButton = (Button) findViewById(R.id.registerbutton);
         userNameTV = (TextView) findViewById(R.id.textView);
         passwordTV = (TextView) findViewById(R.id.textView2);
 
@@ -35,10 +35,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.button:
+            case R.id.loginbutton:
                 startActivity(new Intent(this, MainActivity.class));
                 break;
-            case R.id.button4:
+            case R.id.registerbutton:
                 startActivity(new Intent(this, Register.class));
                 break;
         }

@@ -16,13 +16,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static amazingjyc.cometproject.R.id.button2;
+import static amazingjyc.cometproject.R.id.registerbutton;
 
 public class Register extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
     Spinner spinner;
     Button registerButton;
-    EditText userName, password, firstName, lastName, idNumber;
+    EditText userNameET, passwordET, firstNameET, lastNameET, idNumberET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +34,12 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
-        userName = (EditText) findViewById(R.id.editText3);
-        password = (EditText) findViewById(R.id.editText4);
-        idNumber = (EditText) findViewById(R.id.editText5);
-        firstName = (EditText) findViewById(R.id.editText6);
-        lastName = (EditText) findViewById(R.id.editText7);
-        registerButton = (Button) findViewById(R.id.button2);
+        userNameET = (EditText) findViewById(R.id.editText3);
+        passwordET = (EditText) findViewById(R.id.editText4);
+        idNumberET = (EditText) findViewById(R.id.editText5);
+        firstNameET = (EditText) findViewById(R.id.editText6);
+        lastNameET = (EditText) findViewById(R.id.editText7);
+        registerButton = (Button) findViewById(R.id.registerbutton);
 
         registerButton.setOnClickListener(this);
     }
@@ -58,7 +58,14 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
     @Override
     public void onClick(View view) {
         switch(view.getId()){
-            case R.id.button2:
+            case R.id.registerbutton:
+                String username = userNameET.getText().toString();
+                String password = passwordET.getText().toString();
+                String firstname = firstNameET.getText().toString();
+                String lastname = lastNameET.getText().toString();
+                int idnumber = Integer.parseInt(idNumberET.getText().toString());
+
+                User savedUser = new User(username, firstname, lastname, password, idnumber);
                 startActivity(new Intent(this, Login.class));
                 break;
         }
